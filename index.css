@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Avenir, sans-serif;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 50px;
+    top: 0;
+    background: white;
+}
+.pane {
+    top: 50px;
+    position: relative;
+    height: calc(100vh - 50px);
+}
+.pane:nth-of-type(1) {
+    background: dodgerblue;
+}
+.pane:nth-of-type(2) {
+    background: #BADA55;
+}
+.pane:nth-of-type(3) {
+    background: #FB1;
+}
+.list {
+    display: flex;
+}
+.list .item {
+    cursor: pointer;
+    list-style: none;
+    width: 120px;
+    padding: 5px 20px;
+}
